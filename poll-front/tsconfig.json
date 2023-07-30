@@ -1,0 +1,25 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
+    }
+  ],
+  "compilerOptions": {
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "es2022",
+    },
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  }
+}
