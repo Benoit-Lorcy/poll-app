@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <v-app>
     <v-app-bar>
       <v-container class="fill-height d-flex">
-        <img alt="Vue logo" class="logo" src="@/assets/paull..svg" height="30" />
+        <img alt="Vue logo" class="logo" src="../public/Paull.svg" height="30" />
         <v-spacer></v-spacer>
 
         <RouterLink to="/">

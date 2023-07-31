@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e74bf196-7fee-431f-8587-8da809dca21e" name="Changes" comment="" />
+    <list default="true" id="e74bf196-7fee-431f-8587-8da809dca21e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +37,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -112,6 +118,7 @@
       <workItem from="1690443886841" duration="625000" />
       <workItem from="1690532282615" duration="185000" />
       <workItem from="1690558064193" duration="19000" />
+      <workItem from="1690793650010" duration="226000" />
     </task>
     <servers />
   </component>

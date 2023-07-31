@@ -1,8 +1,8 @@
-package BenoitLorcy.poll.poll;
+package BenoitLorcy.pollback.poll;
 
-import BenoitLorcy.poll.pollOption.PollOption;
-import BenoitLorcy.poll.pollOption.PollOptionDto;
-import BenoitLorcy.poll.pollOption.PollOptionRepository;
+import BenoitLorcy.pollback.pollOption.PollOption;
+import BenoitLorcy.pollback.pollOption.PollOptionDto;
+import BenoitLorcy.pollback.pollOption.PollOptionRepository;
 import com.sun.jdi.request.InvalidRequestStateException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

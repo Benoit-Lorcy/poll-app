@@ -112,9 +112,8 @@
       pollOptions: pollOptions2
     };
 
-    console.log(JSON.stringify(pollData));
-
     try {
+      console.log(`${config.apiUrl}/v1/polls/create`)
       const response = await fetch(`${config.apiUrl}/v1/polls/create`, {
         method: 'POST',
         headers: {

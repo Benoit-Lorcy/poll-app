@@ -1,6 +1,6 @@
-package BenoitLorcy.poll.poll;
+package BenoitLorcy.pollback.poll;
 
-import BenoitLorcy.poll.pollOption.PollOption;
+import BenoitLorcy.pollback.pollOption.PollOption;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

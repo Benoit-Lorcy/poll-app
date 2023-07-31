@@ -1,6 +1,6 @@
-package BenoitLorcy.poll.poll;
+package BenoitLorcy.pollback.poll;
 
-import BenoitLorcy.poll.pollOption.PollOptionDto;
+import BenoitLorcy.pollback.pollOption.PollOptionDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

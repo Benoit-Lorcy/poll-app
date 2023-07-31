@@ -1,0 +1,46 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=mydatabase
+    volumes:
+      - pg_data:/data/postgres
+    ports:
+      - "5432"
+    networks:
+      - postgres
+    restart: always
+  frontend:
+    build:
+      context: ./poll-front
+      dockerfile: Dockerfile
+      args:
+        VITE_SITE_URL: http://127.0.0.1:5500
+        VITE_API_URL: http://127.0.0.1:5501
+    environment:
+      - VITE_SITE_URL=http://127.0.0.1:5500
+      - VITE_API_URL=http://127.0.0.1:5501
+    ports:
+      - "5500:80"
+  backend:
+    build:
+      context: ./poll-back
+      dockerfile: Dockerfile
+    environment:
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=mydatabase
+    ports:
+      - "5501:8080"
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  pg_data:
