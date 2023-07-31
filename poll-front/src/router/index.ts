@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import FormView from '@/views/FormView.vue';
+import VoteView from "@/views/VoteView.vue";
 
 
 const router = createRouter({
@@ -13,7 +14,7 @@ const router = createRouter({
     {
       path: '/vote/:id',
       name: 'vote',
-      component: () => import('../views/VoteView.vue')
+      component: VoteView
     },
     {
       path: '/result/:id',
